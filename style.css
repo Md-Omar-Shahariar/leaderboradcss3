@@ -1,0 +1,153 @@
+/* fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+
+/* common style */
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #f3f1ff;
+  box-sizing: border-box;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.container {
+  background-color: white;
+  width: 870px;
+  padding: 30px;
+  margin-top: 21px;
+  border-radius: 5px;
+}
+/* top players style */
+.top-players {
+  margin-bottom: 30px;
+}
+.section-title {
+  font-size: 24px;
+  color: #562eff;
+  margin-top: 3px;
+}
+.players {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 30px;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player {
+  display: flex;
+  align-items: center;
+}
+.player img {
+  height: 56px;
+  width: 56px;
+}
+.player-name {
+  margin-left: 16px;
+  font-size: 18px;
+}
+hr {
+  border: 1px solid #d1d1d1;
+  margin-bottom: 30px;
+}
+
+/* top blog styles */
+.blogs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-row-gap: 26px;
+}
+.blog {
+  display: flex;
+}
+
+.blog .thumbnail img {
+  width: 177px;
+  height: 117px;
+}
+.blog-info {
+  margin-left: 16px;
+}
+.blog-title {
+  font-size: 20px;
+  margin: 0;
+}
+.blog-author {
+  margin-top: 6px;
+  font-size: 16px;
+  color: #9f9f9f;
+}
+.blog-author a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #562eff;
+}
+
+/* courses style */
+.courses {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 24px;
+}
+.course {
+  width: 253px;
+}
+
+.course .course-banner img {
+  width: 224px;
+  height: 104px;
+}
+.course-info {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.fa-star.filled {
+  color: #ffc014;
+}
+.fa-star.empty {
+  color: #aeaeae;
+}
+.course-duration {
+  background-color: #ffe4e8;
+  color: #ff4a60;
+  border-radius: 15px;
+  padding: 4px 5px;
+}
+/* Midea Queries */
+
+/* Mobile Devices */
+@media only screen and (max-width: 688px) {
+  .container {
+    width: 95%;
+  }
+  .players,
+  .blogs,
+  .courses {
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 20px;
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
+/* Tablet Devices */
+@media only screen and (min-width: 688px) and (max-width: 992px) {
+  .container {
+    width: 90%;
+  }
+  .players,
+  .courses {
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 20px;
+  }
+  .player,
+  .blog {
+    flex-direction: column;
+  }
+}
